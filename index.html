@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #app{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        img{
+            margin: 10px;
+            transition: .5s;
+            border-radius: 20px;
+        }
+        img:hover{
+            opacity: .8;
+            scale: 1.15;
+            box-shadow: 0 0 20px 5px #0009;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app"></div>
+
+    <script>
+        let list =
+            [
+                "20150412_112008.jpg",
+                "20150501_110901.jpg",
+                "2017-06-25 21.01.29.jpg",
+                "20170507_143757.jpg",
+                "BeautyPlus_20160706055014_fast.jpg",
+                "BeautyPlus_20160706055040_fast.jpg",
+                "BeautyPlus_20160706055400_fast.jpg",
+                "BeautyPlus_20160706135845_fast.jpg",
+                "BeautyPlus_20160706140601_fast.jpg",
+                "BeautyPlus_20161002070805_fast.jpg",
+                "BeautyPlus_20161002070833_fast.jpg",
+                "BeautyPlus_20161002070851_fast.jpg",
+                "DSCN3028.JPG",
+                "DSCN3029.JPG",
+                "DSCN3030.JPG",
+                "DSCN3041.JPG",
+                "DSCN3043.JPG",
+                "DSCN3072.JPG",
+                "DSCN3073.JPG",
+                "DSCN3074.JPG",
+                "DSCN3085.JPG",
+                "DSCN3086.JPG",
+                "DSCN8910.JPG",
+                "DSCN8911.JPG",
+                "DSCN8913.JPG",
+                "DSCN8914.JPG",
+                "DSCN8915.JPG",
+                "DSCN8922.JPG",
+                "DSCN8926.JPG",
+                "DSCN8937.JPG",
+                "DSCN8952.JPG",
+                "DSCN8953.JPG",
+                "DSCN8961.JPG",
+                "DSCN8964.JPG",
+                "DSCN8988.JPG",
+                "DSCN8989.JPG",
+                "DSCN8990.JPG",
+                "FB_IMG_1442652132005.jpg",
+                "FB_IMG_1475404792070.jpg",
+                "IMG-20181013-WA0002.jpg",
+                "IMG-20181013-WA0005.jpg",
+                "IMG-20181212-WA0001.jpg",
+                "IMG-20200906-WA0007.jpeg",
+                "IMG-20200906-WA0011.jpeg",
+                "IMG-20201018-WA0007.jpeg",
+                "IMG_20160404_110547.jpg",
+                "IMG_20160728_105728.jpg",
+                "IMG_20160728_105820.jpg",
+                "IMG_20171224_094159.jpg",
+                "IMG_20171224_094210.jpg",
+                "IMG_20171224_094232.jpg",
+                "IMG_20171231_115656.jpg",
+                "IMG_20190605_065029.jpg",
+                "IMG_20190605_065041.jpg",
+                "IMG_20190605_070142_849.jpg",
+                "IMG_20190623_081227.jpg",
+                "IMG_20190623_081243.jpg",
+                "IMG_20190623_081249.jpg",
+                "IMG_20190625_084623.jpg",
+                "IMG_20190625_084627.jpg",
+                "IMG_20200223_131120.jpg",
+                "IMG_20200223_131133.jpg",
+                "IMG_20200223_131135.jpg",
+                "IMG_20200223_131141.jpg",
+                "IMG_20200223_131143.jpg",
+                "PICT0002.JPG",
+                "PICT0004.JPG",
+                "PICT0005.JPG",
+                "PICT0007.JPG",
+                "PICT0023.JPG",
+                "PICT0024.JPG",
+                "PICT0025.JPG",
+                "PICT0026.JPG",
+                "PICT0027.JPG",
+                "Picture 020.jpg",
+                "Picture 027.jpg",
+                "Picture 029.jpg",
+                "Picture 030.jpg",
+                "Picture 032.jpg",
+                "Picture 047.jpg",
+                "Picture 048.jpg",
+                "Picture 049.jpg"
+            ]
+
+        list.forEach(file => {
+            document.getElementById("app").innerHTML += `<a target="_blank" href="kkrdwn_/${file}"><img src="kkrdwn_/${file}" width="150"></a>`;
+        });
+    </script>
+</body>
+
+</html>
